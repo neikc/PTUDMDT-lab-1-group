@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu Ứng Hover Đẹp Mắt</title>
+    <style>
+        /* Thiết lập container cho hiệu ứng */
+        .image-container {
+            position: relative;
+            width: 300px; /* Chiều rộng của hình ảnh */
+            height: 200px; /* Chiều cao của hình ảnh */
+            overflow: hidden; /* Ẩn phần nào đó của hình ảnh */
+            border-radius: 10px; /* Bo tròn góc */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+            margin: 20px; /* Khoảng cách giữa các phần tử */
+            transition: transform 0.3s ease; /* Hiệu ứng khi di chuột */
+        }
+
+        /* Hình ảnh */
+        .image-container img {
+            width: 100%; 
+            height: 100%; 
+            transition: transform 0.5s ease; /* Hiệu ứng phóng to hình ảnh */
+        }
+
+        /* Lớp phủ */
+        .overlay {
+            position: absolute; /* Đặt lớp phủ lên trên hình ảnh */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Màu đen với độ trong suốt */
+            color: white; /* Màu chữ */
+            display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            opacity: 0; /* Bắt đầu với độ mờ 0 */
+            transition: opacity 0.3s ease; /* Hiệu ứng xuất hiện lớp phủ */
+        }
+
+        /* Hiệu ứng hover */
+        .image-container:hover img {
+            transform: scale(1.1); /* Phóng to hình ảnh */
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1; /* Hiện lớp phủ khi hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="https://vcdn1-vnexpress.vnecdn.net/2023/08/16/ueh-1692161004-3829-1692161065.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=iwnEANi4IpUqtB606-KrCQ" alt="Mô tả hình ảnh">
+        <div class="overlay">
+            <h2>UEH university</h2>
+            <p>Top 501-600 WORLD UNIVERSITIES</p>
+        </div>
+    </div>
+
+</body>
+</html>

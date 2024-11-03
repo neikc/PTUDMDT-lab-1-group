@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+            a:hover {
+                color: #4CAF50;
+                transform: scale(1.1);
+            }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trang Chủ</h1>
+        <ul>
+            <li><a href="Cau1.html">Câu 1</a></li>
+            <li>Câu 2
+                <ul>
+                    <li><a href="cau2a.html">Câu 2a</a></li>
+                    <li>Câu 2b
+                        <ul>
+                            <li><a href="câu2b(1).html">Câu 2b (1)</a></li>
+                            <li><a href="câu2b(2).html">Câu 2b (2)</a></li>
+                            <li><a href="câu2b(3).html">Câu 2b (3)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Câu 3
+                <ul>
+                    <li><a href="repos/neikc/PTUDMDT-lab-1-group/Cau3a.html">Câu 3a</a></li>
+                    <li><a href="Cau3b.html">Câu 3b</a></li>
+                    <li><a href="Cau3c.html">Câu 3c</a></li>
+                </ul>
+            </li>
+            <li><a href="cau4.html">Câu 4</a></li>
+            <li><a href="cau5-lab1.html">Câu 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+     .thumbnail {
+        padding-box:30px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Tạo thanh Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/favicon_io/favicon.ico" alt="Logo" class="homepage-header-logo" height="30">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left hidden-xs">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                    <button type="submit" class="btn btn-default">Xác nhận</button>
+                </form>
+
+                <form class="visible-xs-inline-block" style="margin-top:10px">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                </form>
+
+                <!--Custom Navigation-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">4</span>
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Kết thúc Navigation-->
+
+    <!--Bắt đầu ecommerce-status-->
+    <div class="container">
+        <div class="col-sm-8 col-md-9">
+            <h3>Order Status</h3>
+            <!--Bắt đầu sản phẩm 1-->
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img class="img-responsive" src="http://placehold.it/750x600" alt="Product Image" />
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="product.html">Product Name</a>
+                    </div>
+                    <div class="col-sm-1">
+                        1
+                    </div>
+                    <div class="col-sm-2">
+                        $19.99
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-sm btn-success">Hoàn tất</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">1 Message</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kết thúc sản phẩm 1-->
+
+            <!--Bắt đầu sản phẩm 2-->
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img class="img-responsive" src="http://placehold.it/750x600" alt="Product Image" />
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="product.html">Product Name</a>
+                    </div>
+                    <div class="col-sm-1">
+                        1
+                    </div>
+                    <div class="col-sm-2">
+                        $19.99
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-sm btn-success">Hoàn tất</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">1 Message</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kết thúc sản phẩm 2-->
+
+            <!--Bắt đầu sản phẩm 3-->
+            <div class="thumbnail">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img class="img-responsive" src="http://placehold.it/750x600" alt="Product Image" />
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="product.html">Product Name</a>
+                    </div>
+                    <div class="col-sm-1">
+                        1
+                    </div>
+                    <div class="col-sm-2">
+                        $19.99
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-sm btn-success">Hoàn tất</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">1 Message</a>
+                    </div>
+                </div>
+            </div>
+            <!--Kết thúc sản phẩm 3-->
+
+        </div>
+    </div>
+    <!--Kết thúc ecommerce-status-->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

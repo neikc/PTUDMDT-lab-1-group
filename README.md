@@ -1,2 +1,2 @@
-# PTUDMDT-lab-1-group
-PTUDTMDT Bài tập nhóm (Deadline 3/11/2024)
+# PTUDMDT-lab-2-group
+PTUDTMDT Bài tập nhóm (Deadline 08/11/2024)

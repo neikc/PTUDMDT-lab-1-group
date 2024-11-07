@@ -22,9 +22,21 @@
         .row {
             margin-top: 10px;
         }
-    </style>
+
+
+    </style> 
 </head>
 <body>
+    <!--xZoom-master cài đặt-->
+    <!-- get jQuery from the google apis -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="../css/xzoom.css" media="all" />
+
+    <!-- XZOOM JQUERY PLUGIN  -->
+    <script type="text/javascript" src="../js/xzoom.min.js"></script>
+    <!--Kết thúc xZoom-master cài đặt-->
     <!-- Tạo thanh Navigation -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -100,7 +112,7 @@
                 <div class="thumbnail">
                     <div class="row">
                         <div class="col-sm-6">
-                            <img class="img-responsive" src='../img/product1.jpg' alt="Simple Nuts Pumpkin Box" />
+                            <img class="img-responsive xzoom-gallery" src='../img/product1.jpg' alt="Simple Nuts Pumpkin Box" />
                             <div class="thumbnails row">
                                 <div class="col-xs-3">
                                     <a href="#">
@@ -118,7 +130,29 @@
                                     </a>
                                 </div>
                             </div>
+
+                            /* calling script */
+                            $(".xzoom").xzoom({tint: '#333', Xoffset: 15});
+
+                            <img class="xzoom" src="../img/product1.jpg" xoriginal="../img/product1.jpg" />
+
+                            <div class="xzoom-thumbs">
+                                <a href="../img/product1.jpg">
+                                    <img class="xzoom-gallery" width="80" src="p../img/product1.jpg" xpreview="../img/product1.jpg">
+                                </a>
+                                <a href="../img/product1.jpg">
+                                    <img class="xzoom-gallery" width="80" src="../img/product1.jpg">
+                                </a>
+                                <a href="../img/product1.jpg">
+                                    <img class="xzoom-gallery" width="80" src="../img/product1.jpg">
+                                </a>
+                                <a href="../img/product1.jpg">
+                                    <img class="xzoom-gallery" width="80" src="../img/product1.jpg">
+                                </a>
+                            </div>
+
                         </div>
+
                         <div class="col-sm-6">
                             <h4 class="pull-right">$24.99</h4>
                             <h4>Simple Nuts Pumpkin Box</h4>

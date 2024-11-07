@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+        .progress-bar-green {
+            background-color: #5cb85c; /* Màu xanh lá cho còn nhiều hàng */
+        }
+        .progress-bar-yellow {
+            background-color: #f0ad4e; /* Màu vàng cho sắp hết hàng */
+        }
+        .progress-bar-red {
+            background-color: #d9534f; /* Màu đỏ cho hết hàng */
+        }
+    </style>
+    <style>
+        .thumbnails img {
+            margin-top: 10px;
+        }
+
+        .number input {
+            width: 60px;
+        }
+
+        .row {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tạo thanh Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/favicon_io/favicon.ico" alt="Logo" class="homepage-header-logo" height="30">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left hidden-xs">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                    <button type="submit" class="btn btn-default">Xác nhận</button>
+                </form>
+
+                <form class="visible-xs-inline-block" style="margin-top:10px">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                </form>
+
+                <!--Custom Navigation-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../ecommerce-status.html">
+                            <span class="badge pull-right">4</span>
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Kết thúc Navigation-->
+
+    <div class="container">
+        <div class="row">
+            <!-- Danh mục sản phẩm -->
+            <div class="col-sm-4 col-md-3">
+                <h3>Categories</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">14</span>
+                        Simple Nut
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">8</span>
+                        Simple Organic
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">6</span>
+                        Simple Juice
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">10</span>
+                        Halloween Special
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Product Detail -->
+            <div class="col-sm-8 col-md-9">
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="img-responsive" src='../img/product1.jpg' alt="Simple Nuts Pumpkin Box" />
+                            <div class="thumbnails row">
+                                <div class="col-xs-3">
+                                    <a href="#">
+                                        <img src='../img/product1.jpg' alt="Sản phẩm 1 - Góc nhìn 1" class="img-thumbnail img-responsive" /> 
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#">
+                                        <img src='../img/product1.jpg' alt="Sản phẩm 1 - Góc nhìn 2" class="img-thumbnail img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#">
+                                        <img src='../img/product1.jpg' alt="Sản phẩm 1 - Góc nhìn ê" class="img-thumbnail img-responsive" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4>Simple Nuts Pumpkin Box</h4>
+                            <p>Simple Nuts Pumpkin Box - món quà từ thiên nhiên dành tặng cho sức khỏe của bạn. Với những hạt bí ngô organic, rang mộc, không thêm đường, muối hay chất bảo quản, sản phẩm mang đến hương vị thơm ngon tự nhiên và nguồn dinh dưỡng dồi dào. Hãy tận hưởng trọn vẹn vị béo ngậy, bùi bùi của hạt bí và bổ sung năng lượng cho cả ngày dài.</p>
+
+                            <form role="form">
+                                <div class="number form-group">
+                                    <label>Number</label>
+                                    <input type="number" class="input-sm" id="number" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Phiên bản</label>
+                                    <select id="version" class="form-control">
+                                        <option name="version">Thường</option>
+                                        <option name="version">Đặc biệt</option>
+                                        <option name="version">Giới hạn</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Cỡ</label>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default">Hộp Nhỏ</button>
+                                        <button type="button" class="btn btn-default">Hộp Vừa</button>
+                                        <button type="button" class="btn btn-default">Hộp lớn</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Liên hệ người bán</button>
+                                    <button type="submit" class="btn btn-success">Thêm vào giỏ hàng</button>
+                                </div>
+                            </form>
+
+                            <div class="ratings">
+                                <p class="pull-right">3 đánh giá</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    4.0 stars
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phần đánh giá -->
+                <div class="well">
+                    <div class="text-right">
+                        <a class="btn btn-success">Để lại đánh giá</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+
+                            Jane Doe
+                            <span class="pull-right">2 ngày trước</span>
+                            <p>Từ <em>Canada</em></p>
+                            <p>Sản phẩm tốt, nhưng bao bì có thể được cải thiện.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            John Smith
+                            <span class="pull-right">3 ngày trước</span>
+                            <p>Từ <em>Úc</em></p>
+                            <p>Chất lượng tuyệt vời và giao hàng nhanh chóng. Rất khuyến khích!</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+
+                            Emily Clark
+                            <span class="pull-right">4 ngày trước</span>
+                            <p>Từ <em>Anh Quốc</em></p>
+                            <p>Sản phẩm tốt, nhưng giao hàng bị chậm trễ.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+
+                            Michael Brown
+                            <span class="pull-right">5 ngày trước</span>
+                            <p>Từ <em>Đức</em></p>
+                            <p>Sản phẩm tuyệt vời, nhưng hơi đắt.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+
+                            Sarah Wilson
+                            <span class="pull-right">6 ngày trước</span>
+                            <p>Từ <em>Pháp</em></p>
+                            <p>Rất hài lòng với việc mua hàng. Sẽ mua lại!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

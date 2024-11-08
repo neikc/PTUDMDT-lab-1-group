@@ -1,0 +1,82 @@
+﻿body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*Css mục chú ý*/
+.badge.badge-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/*Danh mục sản phẩm css*/
+.product-category {
+    background-color: white; /* Light background for contrast */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+
+    .product-category h3 {
+        font-size: 1.5em;
+        color: darkblue;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .product-category .list-group {
+        padding: 0;
+    }
+
+    .product-category .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1em;
+        background-color: #ffffff; /* White background for each item */
+        border: 1px solid #ddd;
+        margin-bottom: 8px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+        .product-category .list-group-item:hover {
+            background-color: #e6f7e9; /* Light green on hover */
+        }
+
+    .product-category .badge {
+        background-color: #4CAF50; /* Matching badge color */
+        color: #ffffff;
+        font-size: 0.9em;
+        padding: 5px 10px;
+        border-radius: 12px;
+    }
+
+/*Trở về đầu trang*/
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 1000; /* Đảm bảo luôn ở trên cùng */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+    .back-to-top:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
